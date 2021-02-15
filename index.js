@@ -1,4 +1,4 @@
-const TypeWriter = function(txtElement, words, wait = 100) {
+const TypeWriter = function(txtElement, words, wait = 3000) {
  this.txtElement = txtElement;
  this.words = words;
  this.txt = '';
@@ -29,16 +29,16 @@ TypeWriter.prototype.type = function() {
   this.txtElement.innerHTML= `<span class="txt">${this.txt}</span>`;
 
   // Initial Type Speed
-  let typeSpeed= 5000;
+  let typeSpeed= 100;
 
   if(this.isDeleting) {
-    typeSpeed /= 5000;
+    typeSpeed /= 2;
   }
   
   // If word is complete
   if(!this.isDeleting && this.txt == fullTxt) {
     // Make pause at end
-    typeSpeed = this.wait;
+    typeSpeed = this.wait; 
     // Set delete to true
     this.isDeleting = true;
   } else if(this.isDeleting && this.txt === '') { 
@@ -50,11 +50,12 @@ TypeWriter.prototype.type = function() {
 
   }
 
-  setTimeout(() => this.type(), 500)
+  setTimeout(() => this.type(), 300)
 }
 // Init On DOM Load
 document.addEventListener('DOMContentLoaded', init);
-// Init App
+
+ // Init App
 function init () {
    const txtElement = document.querySelector('.txt-type');
    const words = JSON.parse(txtElement.getAttribute('data-words'));

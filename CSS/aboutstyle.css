@@ -1,0 +1,164 @@
+
+body{
+    background-image: url(../Subtract.svg);
+    background-position-x: -40px;
+    background-repeat:no-repeat;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+h1{
+    font-family:Arial, Helvetica, sans-serif;
+    text-align:right;
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:left;
+    padding:20px;
+    margin:20px;
+}
+
+.inline-block{
+   display:flex;
+   justify-content:flex-end;
+    
+    vertical-align:top;
+}
+.inline-block ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+  }
+  
+  
+.inline-block ul li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+.inline-block ul li a:hover:not(.active) {
+    background-color: #FD4F24;
+  }
+  
+  .active {
+    background-color: #FD4F24;
+
+  }
+
+.skills {
+   
+    color:white;
+    widows: 60px;
+    width:40%;
+
+
+
+}
+
+
+
+
+
+
+
+
+.main-content {
+    display:flex;
+    flex-wrap: wrap;
+    
+}
+
+
+
+.container-1 {
+    display:flex;
+    flex-direction: column;
+    width:40%;
+    align:right;
+    justify-content:right;
+    margin-right:0px;
+    widows: 60px;
+}
+
+    
+
+.box-1{
+  
+      display: flex;
+      justify-content:center;
+      padding: 20px;
+      
+
+
+  }
+
+  .box-2{
+      display: flex;
+      justify-content:flex-end;
+      align:right;
+      
+    
+  }
+
+  .box-3{
+      display:flex;
+      justify-content: center;
+
+
+  }
+
+
+@media only screen and (max-width:600){
+
+.main-content {
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    
+}
+
+
+
+.container-1 {
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    align:right;
+    justify-content:right;
+    margin-right:0px;
+    widows: 60px;
+    color: #FD4F24;
+}
+
+.box-1{
+  
+      display: flex;
+      justify-content:center;
+      padding: 20px;
+      color: #FD4F24;
+
+
+  }
+
+  .box-2{
+      display: flex;
+      justify-content:flex-end;
+      align:right;
+      color: #FD4F24;
+    
+  }
+
+  .box-3{
+      display:flex;
+      justify-content: center;
+      color: #FD4F24;
+
+  }
+
+}

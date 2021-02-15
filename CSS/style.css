@@ -21,13 +21,13 @@ body{
    margin: 0;
    padding: 0;
    overflow: hidden;
-   background-color: white;
+   background-color: rgb(0, 0, 0);
  }
  
  
 .inline-block ul li a {
    display: block;
-   color: black;
+   color: white;
    text-align: center;
    padding: 14px 16px;
    text-decoration: none;
@@ -110,8 +110,12 @@ footer{
 }
 
 @media only screen and (max-width: 600px) {
+ .verticallogo{display:block;
+  
 
-
+ }
+.horizontallogo{display:none;
+}
     
-  }
+  
 }

@@ -1,0 +1,100 @@
+
+body{
+
+    background-image: url(../Subtract.svg);
+    background-position-x: -40px;
+    background-repeat:no-repeat;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+  color:white;
+  
+}
+
+.inline-block{
+  display:flex;
+  justify-content:flex-end;
+  vertical-align:top;
+}
+
+.inline-block ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+  }
+  
+  
+.inline-block ul li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+.inline-block ul li a:hover:not(.active) {
+    background-color: #FD4F24;
+  }
+  
+  .active {
+    background-color: #FD4F24;
+
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap:1em;
+  }
+
+  
+
+
+
+    <div class="wrapper">
+       flex-direction:column;
+
+        <div><img src="mockup1.jpg" alt=""> 
+         flex-direction:column;
+
+         </div>
+
+        <div><img src="mockup2.jpg">
+         flex-direction:column;
+        
+        </div>
+
+        <div><img src="mockup3.jpg">
+         flex-direction:column;
+
+        </div>
+        
+        <div><img src="mockup4.jpg">
+         flex-direction:column;
+        
+        </div>
+        
+        <div><img src="mockup5.jpg">
+         flex-direction:column;
+
+        </div>
+        <div><img src="mockup6.jpg">
+         flex-direction:column;
+        </div>
+
+        
+
+        
+    </div>
+
+
+    @media only screen and (max-width: 600px) {
+      .wrapper 
+
+
+  }
