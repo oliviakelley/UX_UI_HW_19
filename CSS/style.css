@@ -109,6 +109,12 @@ footer{
 
 }
 
+.verticallogo{display:none;
+  }
+
+.horizontallogo{display:block;
+  }
+
 @media only screen and (max-width: 600px) {
  .verticallogo{display:block;
   
@@ -116,6 +122,9 @@ footer{
  }
 .horizontallogo{display:none;
 }
-    
+.logo{
+
+  top: 550px;
+}
   
 }

@@ -55,8 +55,8 @@ h1{
   
 
 
-
-    <div class="wrapper">
+    
+    /* <div class="wrapper">
        flex-direction:column;
 
         <div><img src="mockup1.jpg" alt=""> 
@@ -90,11 +90,17 @@ h1{
         
 
         
-    </div>
+    </div> */
 
 
     @media only screen and (max-width: 600px) {
-      .wrapper 
+      .wrapper {
+       display:flex;
+       flex-wrap: wrap;
+       align-items: center;
+       justify-content: center;
+
+      }
 
 
   }
